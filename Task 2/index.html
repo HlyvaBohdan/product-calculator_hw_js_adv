@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="block_1">
+            <form name="numbers" class="first_form">
+                <label for="balance">Баланс</label>
+                <input type="text" id="balance" value="1000 грн" disabled>
+                <label for="beer">Пиво</label>
+                <input type="text" id="beer" value="100 шт." disabled>
+                <label for="wine">Вино</label>
+                <input type="text" id="wine" value="50 шт." disabled>
+                <label for="pepsi">Пепсі</label>
+                <input type="text" id="pepsi" value="80 шт." disabled>
+            </form>
+        </div>
+
+        <div class="block_2">
+            <form name="count" class="second_form">
+                <label for="count">Кількість</label>
+                <input type="text" id="count" value="">
+                <input type="radio" name="radio" class="beer_r" value="Пиво">
+                <label for="beer_r" class="for_r">Пиво</label>
+                <input type="radio" name="radio" class="wine_r" value="Вино">
+                <label for="wine_r" class="for_r">Вино</label>
+                <input type="radio" name="radio" class="pepsi_r" value="Пепсі">
+                <label for="pepsi_r" class="for_r">Пепсі</label>
+                <input type="button" class="add" value="Додати">
+                <textarea id="count_area" cols="30" rows="10" readonly></textarea>
+                <input type="button" class="buy" value="Купити">
+            </form>
+        </div>
+
+        <div class="block_3">
+            <textarea class="block_3_area" id="" cols="30" rows="10" readonly></textarea>
+        </div>
+
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="math.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
